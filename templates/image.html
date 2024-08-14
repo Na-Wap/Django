@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block title %}Image {% endblock %}
+
+{% block content %}
+Image page
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'p1.jpeg' %}" alt="im1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'p2.jpeg' %}" alt="im2" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'p3.jpeg' %}" alt="im2" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'python.jpeg' %}" alt="im2" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
